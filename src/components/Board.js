@@ -6,7 +6,7 @@ import {ElementIcon} from './ElementIcon';
 
 const Board = () => {
     // Select data from the Redux store
-    const {tickets, dataSelected, user,users } = useSelector((state) => state.dataSlice);
+    const { dataSelected, user,users } = useSelector((state) => state.dataSlice);
 
     return (
         <>

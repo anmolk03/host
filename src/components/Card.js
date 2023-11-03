@@ -30,7 +30,7 @@ export const Card = ({ id, title, tag, name, users }) => {
         // Card Component
         <div className="card flex-gap-10" style={{ gap: '5px' }}>
             <div className="flex-sb">
-                {groupBy == "priority" &&
+                {groupBy === "priority" &&
                     <ElementIcon element={ticketStatus} />
                 }
                 <span style={{ color: "grey" }}>{id}</span>
@@ -50,7 +50,7 @@ export const Card = ({ id, title, tag, name, users }) => {
             </div>
             <div className="cardTags">
                 {/* Display priority icon for non-priority grouping */}
-                {groupBy != "priority" && <div className="tags">
+                {groupBy !== "priority" && <div className="tags">
                     <ElementIcon element={arr[tickets[ticketIds]?.priority]} />
                 </div>}
                 {
